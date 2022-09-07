@@ -1,0 +1,11 @@
+_Store
+.idea
+*.pyc
+*.DS_Store
+venv/
+.venv/
+*.sqlite3
+.pytest_cache/
+*.swp
+.coverage
+.vscode
