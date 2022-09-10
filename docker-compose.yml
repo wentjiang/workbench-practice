@@ -1,0 +1,12 @@
+version: "3.8"
+
+services:
+  mysql:
+    image: arm64v8/mysql:8-oracle
+    working_dir: /work
+    volumes:
+      - ~/develop/docker/docker_volumn/mysql:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+    ports:
+      - "3306:3306"
