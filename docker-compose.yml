@@ -1,7 +1,7 @@
 version: "3.8"
 
 services:
-  mysql:
+  customer_mysql:
     image: arm64v8/mysql:8-oracle
     working_dir: /work
     volumes:
