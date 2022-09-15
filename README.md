@@ -28,3 +28,32 @@ source ./venv/bin/activate
 ```shell script
 pip install -r requirements.txt
 ```
+
+
+### Workbench usage
+
+#### Start
+
+```
+cd ~/.data-workbench/bin
+./start.sh
+```
+
+### Stop
+
+```
+./stop.sh
+```
+
+### Restart
+
+```
+./start.sh
+docker exec workbench-container bash -c 'cd /app/dataplat/ && rm /root/airflow/run/*.pid && ./lib/dp start-airflow 8082'
+```
+
+### If the task fail, need to add the dependencies
+
+```
+common/*, lib/deps.zip
+```
