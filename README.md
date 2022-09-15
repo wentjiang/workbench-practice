@@ -39,21 +39,26 @@ cd ~/.data-workbench/bin
 ./start.sh
 ```
 
-### Stop
+#### Stop
+
+update the stop script, change the `down` to `stop`
 
 ```
 ./stop.sh
 ```
 
-### Restart
+#### Restart
 
 ```
 ./start.sh
 docker exec workbench-container bash -c 'cd /app/dataplat/ && rm /root/airflow/run/*.pid && ./lib/dp start-airflow 8082'
 ```
 
-### If the task fail, need to add the dependencies
+#### If the task fail, need to add the dependencies
 
 ```
 common/*, lib/deps.zip
 ```
+
+#### docker container connect the host
+use the host: `host.docker.internal` in the container
