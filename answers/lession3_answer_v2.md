@@ -14,7 +14,7 @@ select * from ods_minibank.minibank_loan_loan where ods_insert_date <= '20220103
 
 -- 贷款总笔数
 -- target=temp.loan_payment_total_count
-select count(*) as payment_count temp.load
+select count(*) as payment_count from temp.loan;
 
 -- 归还贷款次数表 t2
 -- target=temp.loan_payment_count
