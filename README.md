@@ -86,3 +86,8 @@ The generate code does not work for the host, so we need change it to `host.dock
 ```
 export PYTHONPATH=/app/dataplat/lib/deps.zip:$PYTHONPATH && bash -c "$(python3 ./common/data_process.py -f minibank/easysql/lession3_homework.sql -d 20220101 -n test -t test -p)"
 ```
+
+#### update host
+
+Enter the workbench docker
+vim /etc/hosts to update the host

@@ -22,8 +22,3 @@ select id, payment_periods  from ods_minibank.minibank_loan_loan where ods_inser
 select count(*) from t3 join t2 on t2.loan_id = t3.id where t2.pay_count = t3.payment_periods
 
 ```
-
-使用easy sql写
-```
-
-```
